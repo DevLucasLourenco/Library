@@ -3,7 +3,7 @@ public class RegrasDeDesconto {
         Autor autor = new Autor();
         autor.setNome("lucas Lourenco");
 
-        Livro livro = new Livro(autor);
+        Livro livro = new MiniLivro(autor);
         livro.setValor(59.90);
 
         System.out.println("Valor Atual: "+livro.getValor());

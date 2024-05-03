@@ -1,10 +1,11 @@
-public class Livro {
+public abstract class Livro {
     
     private String nome;
     private String descricao;
     private double valor;
     private String isbn;
     private Autor autor;
+    @SuppressWarnings("unused")
     private boolean impresso;
     
     public Livro(Autor autor){
@@ -18,7 +19,6 @@ public class Livro {
     public Livro(){
         this.isbn = "000-00-00000-00-0";
         System.out.println("Novo Livro Criado");
-
     }
     
     void mostrarDetalhes(){
@@ -38,13 +38,7 @@ public class Livro {
         System.out.println("\n");
     }
 
-    public boolean aplicarDescontoDe(double porcentagem){
-        if (porcentagem > 0.3){
-            return false;
-        }
-        this.valor -= this.valor * porcentagem;
-        return true;
-    }   
+    public abstract boolean aplicarDescontoDe(double porcentagem);   
 
     boolean temAutor(){
         boolean naoEhNull = this.autor != null;
