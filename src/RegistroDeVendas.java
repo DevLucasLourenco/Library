@@ -7,6 +7,10 @@ public class RegistroDeVendas {
         LivroFisico fisico = new LivroFisico(autor);
         fisico.setNome("Livro Físico Java");
         fisico.setValor(59.90);
+        
+        if (fisico.aplicarDescontoDe10Porcento()){
+            System.out.println("Valor agora é: "+fisico.getValor());
+        }
 
         Ebook ebook = new Ebook(autor);
         ebook.setNome("Ebook Java");

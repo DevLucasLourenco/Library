@@ -8,11 +8,11 @@ public class RegrasDeDesconto {
 
         System.out.println("Valor Atual: "+livro.getValor());
 
-        if (!livro.aplicarDescontoDe(0.1)){
-            System.out.println("Desconto não pode ser maior do que 30%");
-        }else{
-            System.err.println("Valor com desconto: "+livro.getValor());
-        }
+        // if (!livro.aplicarDescontoDe(0.1)){
+        //     System.out.println("Desconto não pode ser maior do que 30%");
+        // }else{
+        //     System.err.println("Valor com desconto: "+livro.getValor());
+        // }
         
         // ---
         System.out.println("\n");

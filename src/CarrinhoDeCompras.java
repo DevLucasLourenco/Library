@@ -2,10 +2,10 @@ public class CarrinhoDeCompras {
 
     private double total;
 
-    public void adiciona(Livro livro) {
-        System.out.println("Adicionando: "+livro.getNome());
-        livro.aplicarDescontoDe(0.05);
-        this.total += livro.getValor();
+    public void adiciona(Produto produto) {
+        System.out.println("Adicionando: "+produto);
+        // produto.aplicarDescontoDe(0.16);
+        this.total += produto.getValor();
     }
     
     public double getTotal() {

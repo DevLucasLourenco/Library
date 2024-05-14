@@ -16,20 +16,6 @@ public class CalculadoraDeEstoque {
         }else{
             System.out.println("estoque bom");
         }
-
-
-        double v1 = 2;
-        double v2 = 6;
-        boolean validador = false;
-
-        if (v1 < v2 && v2 > 5){
-            System.out.println("ambos são true");
-        }if (v1 < v2 || v2 > 5){
-            System.out.println("ou um ou outro");
-        }if (!validador){
-            System.out.println("Boolean se torna verdadeiro");
-        }
-
     }
 }
 
