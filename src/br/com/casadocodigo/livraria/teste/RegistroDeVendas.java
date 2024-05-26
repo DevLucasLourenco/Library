@@ -1,3 +1,9 @@
+package br.com.casadocodigo.livraria.teste;
+import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.produtos.Ebook;
+import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.Produto;
+
 public class RegistroDeVendas {
     public static void main(String[] args) {
         
@@ -22,5 +28,12 @@ public class RegistroDeVendas {
 
         System.out.println(carrinho.getTotal());
 
+        Produto[] produtos = carrinho.getProdutos();
+        
+        for (Produto produto : produtos){
+            if (produto != null){
+                System.out.println(produto.getValor());
+            }
+        }
     }
 }
